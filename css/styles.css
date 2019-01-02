@@ -1,0 +1,724 @@
+/*Ajustes de pagina*/
+* {box-sizing: border-box;} 
+body{margin:0;}
+
+@font-face {
+    font-family: 'Microsoft Yi Baiti';
+    src: url('../font/msyi.ttf');
+    src: url('../font/msyi.ttf') format('embedded-opentype'),
+ ;
+   font-weight: bolder;
+    font-style: normal; 
+
+}
+
+@font-face {
+    font-family: 'Pixelmania';
+    src: url('../font/Pixelmania.ttf');
+    src: url('../font/Pixelmania.ttf') format('embedded-opentype'),}
+
+.portada-principal{
+    width:100%;
+    background-image: url(../img/Gorillaz.jpg);
+    background-repeat: no-repeat;
+    border-bottom: 2px solid black;
+    height: 750px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+nav {
+    position:fixed;
+    right:20px;
+    top:20px;
+    background-color:rgba(0,0,0,0.6);
+    border-radius:50px;
+    z-index:2;
+    
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+   
+    
+}
+
+
+nav ul li {
+    float:left;
+    cursor: pointer;
+    width:110px;
+    height:50px;
+    margin-right:5px;
+    padding-top:5px;
+    padding-left:5px;
+}
+
+
+nav ul li a,
+nav ul li a:visited {
+    display: inline-block;
+    padding: 10px ;
+    line-height: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Microsoft Yi Baiti';
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: white;
+    display: block;
+    border-radius:25px;
+}
+
+nav ul li a:hover,
+nav ul li a:visited:hover {
+    /*border:2px solid white;*/
+    background-color:rgba(255,20,147,0.9);
+    transition: 0.5s ease;
+}
+
+.titulo-portada{position:absolute;
+                top:200px;
+                color:white;
+                
+                }
+
+.titulo-portada h1{font-family:'Pixelmania';
+                    font-size:3.5em;
+                    text-shadow:7px 0 0px black;
+                    padding-left:200px;
+                    border-bottom:2.5px solid deeppink;
+                    margin:0;
+                    width:auto;}
+
+.titulo-portada h2{
+    font-family:'Microsoft Yi Baiti';
+    font-weight: 800;
+    text-shadow:3px 1px 0px black;
+    margin:0;
+    padding-bottom:5px;
+    float:right;
+    }
+
+
+
+
+.personajes{
+    font-family:'Microsoft Yi Baiti';
+    font-size: 1.5em;
+    height:15em;
+    letter-spacing: -1px;
+    color:white;
+    background-color:black;
+    border-top:5px solid deeppink;
+    position:relative;
+}
+
+.personajes img{position:absolute;
+                right:0;
+                width:auto;
+            animation-name:un_efecto;
+		    animation-duration: .4s;
+		    animation-timing-function: ease-in-out;
+		    animation-iteration-count: infinite;
+        }
+
+@keyframes un_efecto{
+	0%{bottom:-10px;}
+    50%{bottom:-15px;}
+    100%{bottom:-10px;}}
+
+.personajes p{
+    display:block;
+    width:50%;
+    padding-top:20px;
+    padding-left:50px;
+}
+
+.miembros{
+    background-image: url(../img/dark-triangles.png);
+    background-attachment: fixed;
+    background-position: center;
+    padding-top:60px;
+    text-align: center;
+    padding-bottom: 70px;
+    position:relative;
+    border-top: 4px solid deeppink;
+    }
+
+.titulos{
+    font-family: 'Oswald', sans-serif;
+    font-size: 5em;
+    color: deeppink;
+    text-shadow: 0 0 20px deeppink;
+    margin: 0 auto;
+    padding-bottom:5px;
+    text-align:center;
+}
+
+.flex-container-1{
+    display:flex;
+    flex-direction:row;
+	justify-content:center;
+	align-items:center;
+	align-content:center;
+    margin:0 auto;
+    padding-top:50px;
+    width:90%;
+}
+
+.contenido{
+   width:450px;
+   height:600px;
+   padding: 0 30px;
+}
+
+
+.contenido h2{
+    font-family: 'Arimo', sans-serif;
+    font-weight: bolder;
+    font-size: 45px;
+    color: white;
+    margin:0;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+
+.contenido img{
+    width:200px;
+    height:200px;
+}
+
+.contenido img:hover{
+    cursor:pointer;
+    opacity:0.8;
+    transition: 0.5s ease;
+}
+
+.contenido p{
+    font-family: 'Oswald', sans-serif;
+    margin:0;
+    padding: 5px 15px;
+    font-size: 1em;
+    color:#B7B4B4;
+    width:400px;
+}
+
+.russel, .murdoc, .noodle
+{border-right: 1px solid #cecece;}
+
+.discografia{
+    background-image: url(../img/dark-triangles.png);
+    background-attachment: fixed;
+    background-position: center;
+    margin:0 auto;
+    padding-top:60px;
+}
+
+.flex-container-2{
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+	justify-content:space-around;
+	align-items:baseline;
+	align-content:center;
+    margin:0 auto;
+    padding-top:50px;
+    width:90%;
+}
+
+.discografia img {
+    width:auto;
+    height:auto;    
+    }
+
+.discos{padding-bottom:20px;
+    position:relative;}
+
+.discografia ul{
+    display:none;
+    position:absolute;
+    top:0;
+    left:0;
+    padding-left:120px;
+    padding-top:110px;
+    width:500px;
+    height:500px;
+    margin-top:0;
+    cursor:pointer;
+    }
+
+.discografia ul li{
+    list-style: none;
+    font-family: 'Oswald', sans-serif;
+    color:white;
+    text-shadow: 0px 2px 15px black;
+    cursor: pointer;
+    }
+
+.discografia ul li span {
+    font-size:1.4em;
+    color:deeppink;
+    text-align:center;
+    }
+
+.discografia ul li p{
+    font-size:2.5em;
+}
+
+.flex-container-2 .discos:hover ul{
+    display:inline-block;                                  
+    transition: 0.2s ease;}
+
+.discografia .discos ul:hover{
+    background-color:rgba(0,0,0,0.8);
+    transition: 0.5s ease;
+    
+}
+
+
+
+.discografia img:hover{
+    transition: 0.5s ease;
+    cursor: pointer;
+    opacity:0.5;
+}
+
+.album-desc span,p {display:inline;}
+
+
+.conciertos{
+    background-image: url(../img/dark-triangles.png);
+    background-attachment: fixed;
+    background-position: center;
+    color: white;
+    padding-top:60px;
+    padding-bottom: 100px;
+    border-bottom: 4px solid deeppink;
+    overflow: hidden;
+
+}
+
+.conciertos h2{
+    font-family: 'Arimo', sans-serif;
+    font-weight: bolder;
+    font-size: 25px;
+    text-align: center;
+    color:aliceblue;
+    margin:0;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.flex-container-3{
+    display:flex;
+    flex-direction: column;
+    background-color:rgba(0,0,0,0.5);
+    border:1px solid /*rgba(255,255,255,0.2);*/rgba(255,20,147,0.2);
+    width:900px;
+    margin:10px auto 50px auto;
+    padding-bottom:50px;
+}
+
+.conciertos .tours{
+    font-family: 'Microsoft Yi Baiti';
+    font-size:1.3em;
+    letter-spacing: 0;
+    margin: 0 auto;
+    padding-top:50px;
+    
+    }
+    
+.ciudad{color:deeppink;
+        font-weight: bold;
+        padding-right:15px;}
+
+.contacto{
+    background-image: url(../img/what-the-hex.png);
+    padding-top:40px;}
+
+.contacto .titulos{
+    padding:20px auto;
+}
+
+.form-style-2{
+    margin:0 auto;
+	max-width: 500px;
+	padding: 20px 12px 50px 20px;
+	font: 13px Arial, Helvetica, sans-serif;
+}
+.form-style-2-heading{
+	font-weight: bold;
+	font-style: italic;
+	border-bottom: 2px solid #ddd;
+	margin-bottom: 20px;
+	font-size: 15px;
+	padding-bottom: 3px;
+}
+.form-style-2 label{
+	display: block;
+	margin: 0px 0px 15px 0px;
+}
+.form-style-2 label > span{
+	width: 100px;
+	font-weight: bold;
+	float: left;
+	padding-top: 8px;
+	padding-right: 5px;
+}
+.form-style-2 span.required{
+	color:red;
+}
+.form-style-2 .tel-number-field{
+	width: 40px;
+	text-align: center;
+}
+.form-style-2 input.input-field, .form-style-2 .select-field{
+	width: 48%;	
+}
+.form-style-2 input.input-field, 
+.form-style-2 .tel-number-field, 
+.form-style-2 .textarea-field, 
+ .form-style-2 .select-field{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	border: 1px solid #C2C2C2;
+	box-shadow: 1px 1px 4px #EBEBEB;
+	-moz-box-shadow: 1px 1px 4px #EBEBEB;
+	-webkit-box-shadow: 1px 1px 4px #EBEBEB;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	padding: 7px;
+	outline: none;
+}
+.form-style-2 .input-field:focus, 
+.form-style-2 .tel-number-field:focus, 
+.form-style-2 .textarea-field:focus,  
+.form-style-2 .select-field:focus{
+	border: 1px solid #0C0;
+}
+.form-style-2 .textarea-field{
+	height:100px;
+	width: 55%;
+}
+.form-style-2 input[type=submit],
+.form-style-2 input[type=button]{
+	border: none;
+	padding: 8px 15px 8px 15px;
+	background: deeppink;
+	color: #fff;
+	box-shadow: 1px 1px 4px #DADADA;
+	-moz-box-shadow: 1px 1px 4px #DADADA;
+	-webkit-box-shadow: 1px 1px 4px #DADADA;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+}
+.form-style-2 input[type=submit]:hover,
+.form-style-2 input[type=button]:hover{
+	background: black;
+	color: #fff;
+}
+
+
+.contacto .social-networks{
+    padding-top:70px;
+    text-align:center;
+}
+
+
+
+.contacto h2{
+    font-family:'Oswald', sans-serif;
+    border-bottom:1px solid black;
+    font-size:1.7em;}
+
+.contacto .social-networks span{
+    font-size:3em;
+    
+}
+
+
+.icons{
+    color:grey;
+}
+
+.icon-facebook-squared:hover{
+    color:blue;
+    transition: 0.5s ease;
+}
+
+.icon-twitter:hover{
+    color:deepskyblue;
+    transition: 0.5s ease;
+}
+
+.icon-youtube:hover{
+    color:red;
+    transition: 0.5s ease;
+}
+
+.icon-instagram:hover{
+    color:fuchsia;
+    transition: 0.5s ease;
+}
+
+.icon-spotify:hover{
+    color:limegreen;
+    transition: 0.5s ease;
+}
+
+.icon-soundcloud-1:hover{
+    color:orangered;
+    transition: 0.5s ease;
+}
+
+footer{
+    background-color:black;
+    font-family: 'arial';
+    color:white;
+    text-align:center;
+    padding:20px;
+    clear:both;
+}
+
+footer .conditions{
+    font-family: arial;
+    font-size:0.6em;
+}
+
+
+@media only screen and (max-width: 1550px) {
+    .personajes img{width:45%;}
+    .titulo-portada h1{padding-left:130px}
+    .personajes p{padding-top:0;}
+}
+
+@media only screen and (max-width: 1450px) {
+    .portada-principal{height:550px;}
+    .personajes p{
+        margin-top:10px;
+        width:65%;
+        }
+    .personajes img{width:37%;}
+}
+
+@media only screen and (max-width: 1450px) {
+    
+    .personajes p{width:68%;margin-top:50px;}
+    .flex-container-1{
+        flex-direction: column;
+        width:100%;
+        
+    }
+    .contenido{
+        padding:50px 0;
+        width:70%;
+        height:auto;}
+    
+    .contenido img{
+    width:auto;
+    height:auto;
+}
+    
+    .russel, .murdoc, .noodle
+{border-right: none;border-bottom: 1px solid #cecece;}
+    
+}
+
+@media only screen and (max-width: 1050px) {
+    .personajes{height:205px;border-bottom:10px solid black;}
+    .personajes p{margin-top:5px;height:200px;overflow:scroll;padding:10px;overflow-x:hidden;}}
+
+
+@media only screen and (max-width: 768px) {
+    .portada-principal{height:450px}
+    .titulo-portada h1{font-size:2.5em;padding-left:45px;}
+
+    
+    #menu{display:none;}
+    
+    #nav-icon4 {
+  z-index:2;
+  position:fixed;
+  right:10px;
+  width: 60px;
+  height: 45px;
+  float:right;
+  margin:20px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+#nav-icon4 span {
+  display: block;
+  position: absolute;
+  height: 9px;
+  width: 100%;
+  background: white;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+    
+    #nav-icon4 span:nth-child(1) {
+  top: 0px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}
+
+#nav-icon4 span:nth-child(2) {
+  top: 18px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}
+
+#nav-icon4 span:nth-child(3) {
+  top: 36px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}
+
+#nav-icon4.open span:nth-child(1) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: -3px;
+  left: 8px;
+}
+
+#nav-icon4.open span:nth-child(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+#nav-icon4.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  top: 39px;
+  left: 8px;
+}
+    
+    nav {
+    float: right;
+    position: fixed;
+    background-color:rgba(0,0,0,0.7);
+    border-left:2px solid deeppink;
+    z-index:2;
+    right:0;
+    top:20px;
+    margin-right:0;
+    margin-top:50px;
+    border-radius:0;
+    padding-bottom:5px;
+}
+
+        
+    nav ul li {
+    float: none;
+    position: relative;
+    cursor: pointer;
+    margin-top:0;
+    padding-right:0;
+    width:120px;
+    height:auto;
+}
+
+
+nav ul li a,
+nav ul li a:visited {
+        margin:0 auto;
+    }
+    
+    nav ul li a:active,
+nav ul li a:visited:hover:active {
+    /*border:2px solid white;*/
+    background-color:rgba(255,20,147,0.9);
+    transition: 0.2s ease;
+}
+    .flex-container-3{
+        width:575px;}
+    
+}
+
+@media only screen and (max-width: 600px) {
+    .portada-principal{height:300px;}
+    .titulo-portada{top:100px;}
+    .titulo-portada h1{font-size:1.5em;}
+    .flex-container-3{
+        width:90%;}
+    }
+    
+
+@media only screen and (max-width: 500px) {
+    
+    
+    
+    .titulo-portada h1{top:10px;}
+    
+    .discografia img{
+    width:250px;
+    height:250px;
+    }
+    .discografia ul{
+    padding-left:50px;
+    padding-top:50px;
+    width:250px;
+    height:250px;
+    margin-top:0;
+    cursor:pointer;
+    }
+
+
+.discografia ul li span {
+    font-size:1em;
+    color:deeppink;
+    text-align:center;
+    }
+
+.discografia ul li p{
+    font-size:1.5em;
+}
+    
+    .titulos{font-size:4em;}  
+    
+    .contenido img{height:150px;
+                    width:150px;}
+    }
+
